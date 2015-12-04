@@ -9,9 +9,9 @@ import qualified Data.XML.Types
 
 
 -- |
--- An interpreter for the top-level tag of a \"xml-conduit\" document.
+-- An interpreter for the top-level element of \"xml-conduit\" documents.
 {-# INLINE document #-}
-document :: XML.Query.Tag a -> Text.XML.Document -> Either (Maybe Text) a
+document :: XML.Query.Element a -> Text.XML.Document -> Either (Maybe Text) a
 document query document =
-  XML.Query.XMLTypes.tag query $ Data.XML.Types.documentRoot $ Text.XML.toXMLDocument $ document
+  XML.Query.XMLTypes.element query $ Data.XML.Types.documentRoot $ Text.XML.toXMLDocument $ document
 
