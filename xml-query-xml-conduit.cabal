@@ -1,7 +1,7 @@
 name:
   xml-query-xml-conduit
 version:
-  0.2
+  0.3
 synopsis:
   A binding for the "xml-query" and "xml-conduit" libraries
 category:
@@ -42,10 +42,10 @@ library
     Haskell2010
   other-modules:
   exposed-modules:
-    XML.Query.XMLConduit
+    XMLQuery.XMLConduit
   build-depends:
-    xml-query >= 0.8 && < 0.9,
-    xml-query-xml-types >= 0.3 && < 0.4,
+    xml-query >= 0.9 && < 0.10,
+    xml-query-xml-types >= 0.4 && < 0.5,
     xml-types >= 0.3.6 && < 0.4,
     xml-conduit >= 1.3 && < 1.4,
     text >= 1 && < 2,
