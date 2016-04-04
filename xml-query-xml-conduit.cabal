@@ -1,7 +1,7 @@
 name:
   xml-query-xml-conduit
 version:
-  0.3
+  0.3.1
 synopsis:
   A binding for the "xml-query" and "xml-conduit" libraries
 category:
@@ -50,4 +50,4 @@ library
     xml-conduit >= 1.3 && < 1.4,
     text >= 1 && < 2,
     --
-    base-prelude >= 0.1.19 && < 0.2
+    base-prelude >= 0.1.19 && < 2
